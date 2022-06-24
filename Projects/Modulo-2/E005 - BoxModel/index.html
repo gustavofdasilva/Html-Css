@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model HTML</title>
+</head>
+<style>
+    body {
+        background-color: rgb(43, 66, 50);
+        width: 80%;
+        margin: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    header{
+        background-color: gainsboro;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.39);
+        border-radius: 5px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    h1,h2,h3{
+        padding: 15px;
+        
+    }
+
+    h3{
+        border: 20px solid black;
+        border-image-source: url('Borda.png');
+    }
+
+    nav {
+        margin: auto;
+        background-color: rgb(28, 36, 22);
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    nav>a{
+        text-decoration: none;
+        color: white;
+    }
+
+    nav>a:hover{
+        color: greenyellow;
+    }
+
+    main {
+        background-color: gainsboro;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.39);
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        height: 100px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.39);
+        border-radius: 5px;
+    }
+
+    footer>p {
+        padding: 50px;
+        font-weight: 600;
+    }
+
+    aside{
+        background-color: greenyellow;
+        color: black;
+        text-align: center;
+    }
+
+    section{
+        background-color: rgba(0, 0, 0, 0.082);
+        padding: 25px;
+        margin-bottom: 10px;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Site de notícias</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="newspaper">
+            <article>
+                <h2>Poema 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat consequuntur aperiam optio doloribus adipisci, molestiae in repudiandae eius et cum perspiciatis, dolores cumque hic iusto. Reprehenderit soluta provident ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat consequuntur aperiam optio doloribus adipisci, molestiae in repudiandae eius et cum perspiciatis, dolores cumque hic iusto. Reprehenderit soluta provident ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat consequuntur aperiam optio doloribus adipisci, molestiae in repudiandae eius et cum perspiciatis, dolores cumque hic iusto. Reprehenderit soluta provident ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat consequuntur aperiam optio doloribus adipisci, molestiae in repudiandae eius et cum perspiciatis, dolores cumque hic iusto. Reprehenderit soluta provident ipsam.</p>
+                <aside>
+                    <p>Autor: RObert aisten</p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <h2>Poema 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque, earum obcaecati doloremque expedita quia voluptate, similique voluptatem molestiae aliquam sunt magnam voluptas architecto eos soluta dolorem quam? Mollitia, voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis inventore quia laboriosam harum! Maxime laborum aspernatur sequi ex saepe molestias itaque sunt quo, nulla hic reiciendis consectetur, aliquid amet deserunt.</p>
+            <aside>Autor: nelson mandes</aside>
+        </section>
+
+        <section>
+            <h2>Poema 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae eligendi recusandae dolore ipsa ducimus sapiente, quas quaerat eum itaque dignissimos quidem? Illum, tempora! Cupiditate quia veritatis labore rem, praesentium accusantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur explicabo distinctio sequi fugiat itaque, dolore in pariatur sapiente soluta neque corporis, ratione asperiores aliquam omnis magni, iste suscipit fuga tempora? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam deleniti magni nesciunt corrupti harum atque, adipisci non, ratione obcaecati aliquam, mollitia nemo inventore! Consequuntur quae in nostrum consequatur tempora quidem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quasi beatae laborum ex excepturi deleniti nobis ullam, earum nam, iste numquam? Ut sit quaerat, nihil distinctio iusto nesciunt placeat ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti voluptatum debitis id facilis illo ipsam nobis, qui deserunt! Suscipit enim provident unde dolor fugit eligendi mollitia, itaque esse? Non. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perspiciatis dignissimos consectetur delectus veritatis quo ex doloribus repellat nostrum dolores optio eveniet fugit sunt, vero quis est esse, necessitatibus ratione?</p>
+
+            <aside>Autor: delson rubens</aside>
+        </section>
+
+        <section>
+            <h3>Borda editada com imagem</h3>
+
+        </section>
+    </main>
+    <footer><p>Desenvolvido por Gutao</p></footer>
+</body>
+</html>

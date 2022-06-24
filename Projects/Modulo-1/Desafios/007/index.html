@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+</head>
+<body>
+<h1>Imagem flexível</h1>    
+<p>Gostaria de ampliar a imagem? Aumente o tamanho da guia!</p>
+<picture>
+    <source media="(max-width: 600px)" srcset="./imagens/pequena.png" alt="pequena">
+    <source media="(max-width: 1200px)" srcset="./imagens/media.jpg" alt="media">
+    <img src="./imagens/grande.jpg" alt="grande">
+</picture>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*
+No HTML tudo que é id é igual a # no CSS
+No HTML tudo que é class é igual a . no CSS
+Pseudoclasses é igual à : no CSS que se referem diretamente ao estado de algum elemento, ou seja, se esse elemento está ativo, se está vazio, se está abilitado etc...
+Pseudoelementos é igual :: no CSS que serve para alterar e adicionar elementos no html
+USAR O ID EM APENAS UM (1) ELEMENTO APENAS
+CASO CONTRARIO USE CLASS
+
+*/
+
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+main {
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 0px;
+    width: 60%;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
+
+h1 {
+    font-weight: bold;
+    color: rgb(89, 51, 122);
+    text-align: left;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+}
+
+h1#main-title { /*Estilo só vai se aplicar ao elemento do tipo h1 que contenha o id main-title*/
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+
+#main-title { /*Estilo só vai se aplicar a qualquer elemento que contenha o id main-title*/
+    text-decoration: underline;
+    background-color: rgb(89, 51, 122);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-weight: bold;
+    color: rgb(89, 51, 122);
+    text-align: left;
+}
+
+h2.basic{
+    color: green;
+}
+
+.medium{
+    color: yellow;
+}
+
+.hard{
+    color: red;
+}
+
+.highlight {
+    background-color: rgba(255, 192, 203, 0.315);
+}
+
+div {
+    background-color: gray;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+    div:hover {
+        background-color: greenyellow;
+        height: 200px;
+        width: 200px;
+    }
+    div:active {
+        background-color: aqua;
+    }
+
+    div:hover > p {
+        display: block;
+
+    }
+
+    div > p {
+        display: none;
+    }
+
+    li {
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+        a:hover{
+            text-decoration:underline;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+    a::before {
+        content: 'olhe >>> ';
+    }
+
+    a::after {
+        content: ' link';
+    }
+
+    a#special::after{
+        content: 'fodao';
+    }
