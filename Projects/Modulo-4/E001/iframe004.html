@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes seguros</title>
+</head>
+<body>
+
+    <!-- Parâmetro pra evitar ações maliciosas nos sites de iframes:
+    
+    * sandbox="sandbox"
+
+    * referrerpolicy="no-referer"
+
+    ! Esses dois parâmetros dão o MÁXIMO de segurança no iframe, com diversas limitações no mesmo.
+    -->
+
+    <h1>Segurança nos IFRAMES</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptas praesentium odio dolor nobis non libero nesciunt cupiditate quo ipsam sed tenetur, a ratione animi unde eaque tempora nam exercitationem.</p>
+    <iframe src="./paginas-extras/paginateste004.html" frameborder="0" width="600px" height="500px" sandbox="sandbox" referrerpolicy="no-referer"></iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur consectetur quia placeat vel voluptatem voluptas, delectus sit. Doloremque in omnis illum dicta earum optio similique quaerat nisi quam? Sit, ullam.</p>
+</body>
+</html>
