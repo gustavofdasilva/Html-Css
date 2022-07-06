@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes 03</title>
+    <style>
+        iframe {
+            width: 90vw;
+            height: 50vh;
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nesciunt, quos corporis fuga adipisci voluptates assumenda veritatis quam, dolore commodi ipsam consequuntur praesentium similique laborum dolor non officia atque quas.</p>
+
+    <!--O target do link tem que ser o name do iframe pra entrar nele !!!-->
+
+    <ul>
+        <li><a href="paginas-extras/paginateste001.html" target="if">Primeira página</a></li>
+        <li><a href="paginas-extras/paginateste002.html" target="if">Segunda página</a></li>
+        <li><a href="paginas-extras/paginateste003.html" target="if">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero assumenda eius dolores sed voluptas repellat fugiat nobis asperiores, aperiam quam minus natus culpa, sint laborum magni. Velit, autem molestiae?
+    </p>
+
+    <iframe srcdoc="
+    
+    <h1 style='margin-top: 20px; text-align:center'>Escolha uma das opções</h1><img width='100px' height='100px' src='https://static.vecteezy.com/ti/vetor-gratis/p3/3266588-linha-icone-para-incompatibilidade-vetor.jpg'>
+    
+    
+    
+    " frameborder="1" name="if">
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et provident atque natus ex magnam nobis neque dolorem facilis adipisci, culpa quod voluptatum reiciendis sequi hic quae nam? Sit, illo quaerat?</span><span>Ipsam recusandae dolorem reprehenderit explicabo corporis tempora, magnam, delectus molestias modi incidunt obcaecati illo praesentium sequi itaque libero reiciendis iure voluptas laboriosam. Quaerat, repellat voluptatibus. Ab quibusdam provident repellat qui!</span><span>Soluta earum accusamus porro, nulla iusto est possimus dolore! Amet animi quam et tempore nobis sunt quis quo ad delectus possimus facilis dignissimos, error quisquam aperiam consectetur necessitatibus itaque. Esse?</span><span>Culpa, officiis eum quos iure voluptatem facilis voluptates accusantium minima a quod ullam provident, ratione, corporis illum sunt cumque molestias delectus. Architecto et natus accusamus dignissimos reiciendis quo at ipsa.</span><span>Accusantium, explicabo aut laudantium perspiciatis quam consequuntur tenetur eos, incidunt iure quasi numquam quibusdam error nemo consectetur adipisci inventore itaque! Rem, non quas. Fugit quasi aliquid minus. Nesciunt, fugit reprehenderit?</span></p>
+</body>
+</html>
