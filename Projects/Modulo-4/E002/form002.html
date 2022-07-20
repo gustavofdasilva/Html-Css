@@ -14,14 +14,26 @@
         * GET: basicamente aparece na url
         ! POST: basicamente não aparece na url, MAS NÃO PROTEGE OS DADOS!!!
     -->
-    <form method="post" action="cadastro.php">
+    <form method="post" action="cadastro.php" autocomplete="on">
 
-        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"> </p>
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required minlength="6" placeholder="nome" autocomplete="username"> </p>
+
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" autocomplete="current-password">
+        </p>
         
 
-        <p><label for="iidade">Idade: </label> <input type="number" name="idade" id="iidade"></p>
+        <p><label for="iidade">Idade: </label> <input type="number" name="idade" id="iidade" required maxlength="2"></p>
 
+        <p><label for="inascimento">Data de nascimento: </label> <input type="date" name="nascimento" id="inascimento"></p>
+
+        <p><label for="icor">Cor favorita: </label> <input type="color" name="cor" id="icor"></p>
         
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
