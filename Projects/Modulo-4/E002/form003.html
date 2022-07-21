@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form3</title>
 </head>
-<body style="text-align: center">
+<body>
     <h1>Formulario 3</h1>
     <form action="cadastro.php" method="post">
         <p>
@@ -33,6 +33,20 @@
             <label for="ihora">Horário de execução da prova: </label>
             <input type="time" name="hora" id="ihora" >
         </p>
+
+        <fieldset> <!--Agrupamento de campos de formulário-->
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail">
+            </p>
+                <!-- ESTUDAR SOBRE REGEX-->
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-local" placeholder="(##) #####-####" pattern="^[0-9]{5}-[0-9]{4}$">
+            </p>
+        </fieldset>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
