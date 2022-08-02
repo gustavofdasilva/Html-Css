@@ -9,33 +9,31 @@
 <body>
     <h1>Formulario 3</h1>
     <form action="cadastro.php" method="post">
-        <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="username">
-        </p>
-
-        <p>
-            <label for="imedia">Média: </label>
-            <input type="number" name="media" id="imedia" required autocomplete="off" placeholder="Nota média final de 0 a 10" min="0" max="10" step="0.1" value="5">
-        </p>
-
-        <p>
-            <label for="iperiodo">Periodo Letivo: </label>
-            <input type="month" name="periodo" id="iperiodo" value="2020-08">
-        </p>
-
-        <p>
-            <label for="idata">Data: </label>
-            <input type="date" name="data" id="idata" value="2020-07-05">
-        </p>
-
-        <p>
-            <label for="ihora">Horário de execução da prova: </label>
-            <input type="time" name="hora" id="ihora" >
-        </p>
+        <fieldset>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="username">
+            </p>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" required autocomplete="off" placeholder="Nota média final de 0 a 10" min="0" max="10" step="0.1" value="5">
+            </p>
+            <p>
+                <label for="iperiodo">Periodo Letivo: </label>
+                <input type="month" name="periodo" id="iperiodo" value="2020-08">
+            </p>
+            <p>
+                <label for="idata">Data: </label>
+                <input type="date" name="data" id="idata" value="2020-07-05">
+            </p>
+            <p>
+                <label for="ihora">Horário de execução da prova: </label>
+                <input type="time" name="hora" id="ihora" >
+            </p>
+        </fieldset>
 
         <fieldset> <!--Agrupamento de campos de formulário-->
-            <legend>Dados pessoais</legend>
+            <legend><h1>Dados pessoais</h1></legend>
             <p>
                 <label for="iemail">Email: </label>
                 <input type="email" name="email" id="iemail">
@@ -47,10 +45,39 @@
             </p>
         </fieldset>
 
+        <fieldset>
+            <legend><h1>Esportes Favoritos</h1></legend>
+                <input type="checkbox" name="Efut" id="iEfut">
+                <label for="iEfut"> Futebol</label> <br>
+
+                <input type="checkbox" name="Ebas" id="iEbas">
+                <label for="iEbas"> Basquete</label> <br>
+
+                <input type="checkbox" name="Evol" id="iEvol">
+                <label for="iEvol"> Vôlei</label> <br>
+
+                <input type="checkbox" name="Eten" id="iEten">
+                <label for="iEten"> Tênis</label> <br>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h1>Sexo</h1></legend>
+            <input type="radio" name="radsex" id="masc" value="M">
+                <label for="masc">Masculino</label> <br>
+            
+            <input type="radio" name="radsex" id="fem" checked value="F">
+                <label for="fem">Feminino</label>
+        </fieldset>
+
+
+        
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
     </form>
 </body>
 </html>
