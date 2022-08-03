@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output de form</title>
+</head>
+<body>
+    <h1>Outputs</h1>
+    <form action="dados.php" method="post">
+
+        <fieldset>
+            <legend><h1>Informe os números!</h1></legend>
+            <label for="n1">Número 1: </label>
+            <input type="number" name="n1" id="n1" oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+            <br>
+            <label for="n2">Número 2: </label>
+            <input type="number" name="n2" id="n2" oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+            <br>
+            <label for="soma">Soma: </label>
+            <output id="soma" name="soma">0</output> <br>
+
+            <hr>
+
+            <p>
+                <label for="range">Escolha: </label>
+                <input type="range" name="range" id="range" min="0" max="10" oninput="escolha.innerHTML = Number(range.value)"> <output id="escolha">0</output>
+            </p>
+
+            <p>
+                <label for="ano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="ano" min="1900" max="2022" value="2000" oninput="idade.innerHTML = 2022 - Number(ano.value)">
+            </p>
+            <p>
+                <label for="idade">Sua idade é: </label>
+                <output id="idade">---</output>
+            </p>
+            <input type="submit" value="Enviar" on>
+        </fieldset>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios sem input!</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend><h1>Exemplo</h1></legend>
+            <p>
+                <label for="iest">Estado: </label>
+                <select name="est" id="iest">
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+                    <optgroup label="Região nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="prof">Profissão: </label>
+                <input type="text" name="prof" id="prof" list="list-prof">
+                <datalist id="list-prof">
+                    <option value="adm">Administrador</option>
+                    <option value="med">Médico</option>
+                    <option value="pol">Policial</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="msg">Mensagem: </label>
+                <textarea name="msg" id="msg" cols="10" rows="5"></textarea>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
