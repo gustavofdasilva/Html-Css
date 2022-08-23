@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(53, 13, 90);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 85%;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+}
+
+header>h1 {
+    padding: 40px;
+    text-align: center;
+}
+
+menu {
+    display: block;
+}
+
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a{
+    color: blueviolet;
+    background-color: aliceblue;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-top: 2px solid blueviolet ;
+    transition: 0.2s;
+}
+    menu>ul>li>a:hover {
+        color:white;
+        background-color: blueviolet;
+        transition: 0.2s;
+    }
+
+article > h2 {
+    padding-bottom: 15px;
+}
+
+article>p {
+    text-align: justify;
+    margin-bottom: 5px;
+    text-indent: 20px;
+}
+
+/*div {
+    background-color: greenyellow;
+    width: 100%;
+    height: 600px;
+    margin: 20px 0 20px 0;
+    background-image: url(https://st.depositphotos.com/1010338/2099/i/600/depositphotos_20999947-stock-photo-tropical-island-with-palms.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}*/
