@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburguer menu</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-queries.css" media="all">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="openMenu()">menu</i>
         <menu>
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -41,6 +43,18 @@
 
         </div>-->
     </main>
+    <script>
+        var menuButton = document.getElementById("burguer");
+        var menuOptions = document.querySelector("menu");
+
+        function openMenu() {
+            if(menuOptions.style.display == 'none') {
+                menuOptions.style.display = 'block'
+            } else {
+                menuOptions.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
 

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: rgb(53, 13, 90);
+    background-color: rgb(21, 5, 36);
 }
 
 main {
@@ -34,7 +34,7 @@ header>h1 {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu>ul {
@@ -67,6 +67,20 @@ article>p {
     margin-bottom: 5px;
     text-indent: 20px;
 }
+
+i#burguer {
+    background-color: rgba(0, 0, 0, 0.438);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+    i#burguer:hover {
+        background-color: rgba(0, 0, 0, 0.582);
+        transition: 0.2s;
+    }
 
 /*div {
     background-color: greenyellow;
