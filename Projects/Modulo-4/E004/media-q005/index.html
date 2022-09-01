@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-queries.css" media="all">
 </head>
-<body>
+<body onresize="checkSize()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-icons" onclick="openMenu()">menu</i>
@@ -54,6 +54,16 @@
                 menuOptions.style.display = 'none'
             }
         }
+
+        function checkSize() {
+            if(window.innerWidth >= 768) {
+                menuOptions.style.display = 'inline-block'
+            } else {
+                menuOptions.style.display = 'none';
+            }
+        }
+
+
     </script>
 </body>
 </html>
